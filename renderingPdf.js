@@ -73,7 +73,7 @@ async function loadingPdf() {
         renderPage(pageNum);
     });;
 }
-
+let counter = 0;
 const rendering = (urls, slideInterval) => {
     let currentCount = 0;
     currentUrl = urls[currentCount];
@@ -82,7 +82,8 @@ const rendering = (urls, slideInterval) => {
     setInterval(_ => {
         const urlCount = urls.length;
         if (completed) {
-            console.log(`slide completed -> ${currentUrl}`);
+            counter++;
+            console.log(`slide completed for ${counter} -> ${currentUrl}`);
             currentCount++;
             if (currentCount >= urlCount) {
                 currentCount = 0;
