@@ -59,12 +59,15 @@ async function onNextPage() {
     await queueRenderPage(pageNum);
 }
 
+// const CORS_PROXY = "https://cors.bridged.cc/";
+const CORS_PROXY = "https://naki-cors.herokuapp.com/";
+
 async function loadingPdf() {
     console.log(`loading... ${currentUrl}`);
     spinner.style.display = 'block';
     pageNum = 1;
-    const corsUrl = "https://cors-anywhere.herokuapp.com/" + currentUrl;
-    await pdfjsLib.getDocument(corsUrl).promise.then(function(pdfDoc_) {
+    const url = CORS_PROXY + currentUrl;
+    await pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
         pdfDoc = pdfDoc_;
         document.getElementById('page_count').textContent = pdfDoc.numPages;
         renderPage(pageNum);
