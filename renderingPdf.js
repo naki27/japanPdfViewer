@@ -37,7 +37,7 @@ async function renderPage(num) {
             }
         });
     });
-    document.getElementById('page_num').textContent = num;
+    // document.getElementById('page_num').textContent = num;
 }
 
 async function queueRenderPage(num) {
@@ -69,7 +69,7 @@ async function loadingPdf() {
     const url = CORS_PROXY + currentUrl;
     await pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
         pdfDoc = pdfDoc_;
-        document.getElementById('page_count').textContent = pdfDoc.numPages;
+        // document.getElementById('page_count').textContent = pdfDoc.numPages;
         renderPage(pageNum);
     });;
 }
