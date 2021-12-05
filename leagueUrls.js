@@ -28,12 +28,12 @@ const leagueUrls = _ => {
 
     //九州大会
     // 男子ALL https://drive.google.com/file/d/16I3BxzocDzc6ZKw4kuYAqWmZyrSLfgG2/view?usp=sharing
-    // 女子18 https://drive.google.com/file/d/16I3BxzocDzc6ZKw4kuYAqWmZyrSLfgG2/view?usp=sharing
+    // 女子18 https://drive.google.com/file/d/1a1VC5K1Uelprnfhs8vEgDKoCbyWs0bEI/view?usp=sharing
     // 女子30 https://drive.google.com/file/d/1-CR3FaZ96xRpEebdwZ3xuKrUoCbCsOgt/view?usp=sharing
     // 女子40 https://drive.google.com/file/d/1b-dY45q1Qjz08S5oEzAu_-7PBLiywrie/view?usp=sharing
     return [
         "https://drive.google.com/uc?id=16I3BxzocDzc6ZKw4kuYAqWmZyrSLfgG2&export=download&format=pdf",
-        "https://drive.google.com/uc?id=16I3BxzocDzc6ZKw4kuYAqWmZyrSLfgG2&export=download&format=pdf",
+        "https://drive.google.com/uc?id=1a1VC5K1Uelprnfhs8vEgDKoCbyWs0bEI&export=download&format=pdf",
         "https://drive.google.com/uc?id=1-CR3FaZ96xRpEebdwZ3xuKrUoCbCsOgt&export=download&format=pdf",
         "https://drive.google.com/uc?id=1b-dY45q1Qjz08S5oEzAu_-7PBLiywrie&export=download&format=pdf"
     ];
